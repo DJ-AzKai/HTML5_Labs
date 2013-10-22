@@ -38,6 +38,7 @@ context.fill();
 context.stroke();
 context.closePath();
 
+
 image.src = "My logo.png";
 
 context.drawImage(image, 200, 300);
@@ -49,7 +50,7 @@ var pix = imgd.data;
 // Loop over each pixel and set a transparent red.
 for (var i = 0; n = pix.length, i < n; i += 4) {
 //invert the colors
-  pix[i  ] = 255 - pix[i  ]; // red
+  pix[i] = 255 - pix[i  ]; // red
   pix[i+1] = 255 - pix[i+1]; // green
   pix[i+2] = 255 - pix[i+2]; // blue
 }
@@ -90,5 +91,4 @@ var gradient2 = context.createRadialGradient(100, 10, 30, 130, 40, 30);
 gradient1.addColorStop(0,   '#f00'); // red
 gradient1.addColorStop(0.5, '#ff0'); // yellow
 gradient1.addColorStop(1,   '#00f'); // blue
-
 
