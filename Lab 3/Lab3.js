@@ -83,12 +83,15 @@ var gradient1 = context.createLinearGradient(100, 50, 50, 50);
 gradient1.addColorStop(0,   '#f00'); // red
 gradient1.addColorStop(0.5, '#ff0'); // yellow
 gradient1.addColorStop(1,   '#00f'); // blue
-
+context.fillStyle = gradient1;
+context.fillRect(400,200, 50,50);
 
 //gradiant circle
-var gradient2 = context.createRadialGradient(100, 10, 30, 130, 40, 30);
+var gradient2 = context.createRadialGradient(100, 10, 30, 200, 110, 30);
 
 gradient1.addColorStop(0,   '#f00'); // red
 gradient1.addColorStop(0.5, '#ff0'); // yellow
 gradient1.addColorStop(1,   '#00f'); // blue
+context.fillStyle = gradiant;
+context.fillRect(400,200, 50,50);
 
